@@ -43,56 +43,6 @@ Within this laboratory environment, AI agents can:
 Over time, this creates a **continuous autonomous research process** driven by AI agents.
 
 
-## 🚀 The Idea
-
-Machine learning research traditionally follows a manual process:
-
-```
-Human Researcher
-      │
-      ▼
-Design Experiment
-      │
-      ▼
-Modify Code
-      │
-      ▼
-Run Training
-      │
-      ▼
-Analyze Results
-      │
-      ▼
-Repeat
-```
-
-AutoLab explores a laboratory environment where **AI agents participate directly in the research loop**.
-
-```
-Research Goal
-      │
-      ▼
-AI Agent
-      │
-      ▼
-Design Experiment
-      │
-      ▼
-Modify Model / Training Code
-      │
-      ▼
-Run Experiment
-      │
-      ▼
-Evaluate Results
-      │
-      ▼
-Generate Next Experiment
-```
-
-The result is a **continuous research workflow driven by autonomous agents**.
-
-
 
 ## 🤖 Autonomous Research Loop
 

@@ -250,7 +250,7 @@ Future directions:
 
 ## 📜 Contribution & License
 
-Innovator is **open source** and welcomes contributions from researchers, developers, and creators.
+AutoLab is **open source** and welcomes contributions from researchers, developers, and creators.
 
 You can contribute by:
 

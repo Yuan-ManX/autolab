@@ -7,7 +7,7 @@ In AutoLab, AI agents act as researchers. They propose ideas, modify training co
 The system operates as a continuous **Autonomous Research Loop**, enabling AI agents to explore improvements to machine learning models without human intervention.
 
 
-# Autonomous Research Loop
+## Autonomous Research Loop
 
 AutoLab research follows this loop:
 
@@ -16,12 +16,12 @@ Idea → Code Change → Experiment → Evaluation → Decision → Iterate
 AI agents repeat this cycle continuously in order to discover improvements in model architecture, training dynamics, and optimization strategies.
 
 
-# Experiment Setup
+## Experiment Setup
 
 To set up a new experiment, work with the user to:
 
 1. **Agree on a run tag**: propose a tag based on today's date (e.g. `mar5`). The branch `autoresearch/<tag>` must not already exist — this is a fresh run.
-2. **Create the branch**: `git checkout -b autoresearch/<tag>` from current master.
+2. **Create the branch**: `git checkout -b autolab/<tag>` from current master.
 3. **Read the in-scope files**: The repo is small. Read these files for full context:
    - `README.md` — repository context.
    - `prepare.py` — fixed constants, data prep, tokenizer, dataloader, evaluation. Do not modify.
@@ -108,9 +108,9 @@ The experiment runs on a dedicated branch (e.g. `autolab/mar5` or `autolab/mar5-
 LOOP FOREVER:
 
 1. Look at the git state: the current branch/commit we're on
-2. Tune `train.py` with an experimental idea by directly hacking the code.
+2. Tune `research.py` with an experimental idea by directly hacking the code.
 3. git commit
-4. Run the experiment: `uv run train.py > run.log 2>&1` (redirect everything — do NOT use tee or let output flood your context)
+4. Run the experiment: `uv run research.py > run.log 2>&1` (redirect everything — do NOT use tee or let output flood your context)
 5. Read out the results: `grep "^val_bpb:\|^peak_vram_mb:" run.log`
 6. If the grep output is empty, the run crashed. Run `tail -n 50 run.log` to read the Python stack trace and attempt a fix. If you can't get things to work after more than a few attempts, give up.
 7. Record the results in the tsv (NOTE: do not commit the results.tsv file, leave it untracked by git)

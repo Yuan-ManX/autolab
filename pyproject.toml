@@ -1,0 +1,81 @@
+[project]
+name = "autolab"
+version = "0.1.0"
+description = "AutoLab — Autonomous AI Research Laboratory powered by AI agents."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "AutoLab Contributors" }
+]
+keywords = [
+    "ai-agents",
+    "autonomous-research",
+    "ai-research",
+    "machine-learning",
+    "llm-training",
+    "autolab",
+    "ai-scientist",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+
+    # Deep Learning
+    "torch==2.9.1",
+
+    # Research kernels
+    "kernels>=0.11.7",
+
+    # Data processing
+    "numpy>=2.2.6",
+    "pandas>=2.3.3",
+    "pyarrow>=21.0.0",
+
+    # Tokenization
+    "tiktoken>=0.11.0",
+    "rustbpe>=0.1.0",
+
+    # Visualization
+    "matplotlib>=3.10.8",
+
+    # Utilities
+    "requests>=2.32.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ruff",
+    "pytest",
+]
+agent = [
+    "openai",
+    "anthropic",
+]
+research = [
+    "scipy",
+    "scikit-learn",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ipython",
+]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu128" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true

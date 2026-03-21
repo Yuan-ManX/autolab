@@ -1,8 +1,9 @@
 
 <div align="center">
 
-# 🔬 AutoLab
+# IRPG ♾️
 
+### Infinite Research & Play Ground
 ### Autonomous AI Research Laboratory
 
 <p>
@@ -10,7 +11,7 @@ An experimental laboratory where <b>AI Agents perform autonomous research</b>.
 </p>
 
 <p>
-AutoLab provides an environment where AI agents can design experiments, modify models, run training loops, evaluate results, and iteratively explore new research directions.
+IRPG provides an environment where AI agents can design experiments, modify models, run training loops, evaluate results, and iteratively explore new research directions.
 </p>
 
 <p>
@@ -25,9 +26,9 @@ AutoLab provides an environment where AI agents can design experiments, modify m
 
 ## 🧠 Overview
 
-**AutoLab** is an experimental **AI Agent Research Laboratory**.
+**IRPG** is an experimental **AI Agent Research Laboratory**.
 
-The goal of AutoLab is to create an environment where **AI agents can independently explore research ideas, run experiments, and iteratively improve models**.
+The goal of IRPG is to create an environment where **AI agents can independently explore research ideas, run experiments, and iteratively improve models**.
 
 Instead of manually running experiments, researchers define **research goals and constraints**, while AI agents handle the exploration process.
 
@@ -80,7 +81,7 @@ This allows AI agents to conduct **long sequences of experiments autonomously**.
 
 ### 🤖 AI Agent Research Environment
 
-AutoLab provides an environment where AI agents can independently conduct research activities such as:
+IRPG provides an environment where AI agents can independently conduct research activities such as:
 
 - generating experimental ideas
 - implementing model changes
@@ -103,7 +104,7 @@ Humans provide **research objectives**, while agents explore the space of possib
 
 ### ⚡ Lightweight Research Infrastructure
 
-AutoLab is designed to run on **a single GPU**, enabling autonomous research experiments without large compute clusters.
+IRPG is designed to run on **a single GPU**, enabling autonomous research experiments without large compute clusters.
 
 
 
@@ -149,7 +150,7 @@ AutoLab is designed to run on **a single GPU**, enabling autonomous research exp
 ## 📂 Project Structure
 
 ```
-AutoLab
+IRPG
 │
 ├── prepare.py
 │   Dataset preparation and tokenizer training
@@ -175,15 +176,15 @@ Agents primarily modify **research.py** during research experiments.
 Clone repository:
 
 ```bash
-git clone https://github.com/Yuan-ManX/autolab.git
-cd autolab
+git clone https://github.com/Yuan-ManX/IRPG.git
+cd IRPG
 ```
 
 Create environment:
 
 ```bash
 conda create -n autolab python=3.10
-conda activate autolab
+conda activate IRPG
 ```
 
 Install dependencies:
@@ -250,7 +251,7 @@ Future directions:
 
 ## 📜 Contribution & License
 
-AutoLab is **open source** and welcomes contributions from researchers, developers, and creators.
+IRPG is **open source** and welcomes contributions from researchers, developers, and creators.
 
 You can contribute by:
 
@@ -266,6 +267,6 @@ Please refer to [LICENSE](LICENSE).
 
 ## 🌍 Vision
 
-AutoLab explores the idea of an **AI research laboratory operated by autonomous agents**.
+IRPG explores the idea of an **AI research laboratory operated by autonomous agents**.
 
 Instead of manually running experiments, researchers define goals while agents explore the research space. Agents generate ideas, test them, analyze outcomes, and iteratively improve their strategies. The laboratory environment runs continuously. Humans define the objectives. AI agents explore the research frontier.

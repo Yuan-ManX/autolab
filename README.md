@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# IRPG ♾️
+# IRPG ♾️ 🔬
 
 ### Infinite Research & Play Ground
 ### Autonomous AI Research Laboratory
